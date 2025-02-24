@@ -26,3 +26,29 @@ for tail_number in tail_numbers:
         aircraft_model = aircraft.get('model', 'Unknown') if aircraft else 'Unknown'
         print(f"  Aircraft Model: {aircraft_model}")
         print(f"  Aircraft Registration: {flight.get('registration', 'Unknown')}")
+
+
+#Output:
+# Latest flight for N350XX:
+#   Airline: Lufthansa
+#   Departure: Cairo International Airport at 2025-02-25T01:45:00+00:00
+#   Arrival: Frankfurt International Airport at 2025-02-25T05:25:00+00:00
+#   Flight Status: scheduled
+#   Aircraft Model: Unknown
+#   Aircraft Registration: Unknown
+
+# Latest flight for N621MM:
+#   Airline: Lufthansa
+#   Departure: Cairo International Airport at 2025-02-25T01:45:00+00:00
+#   Arrival: Frankfurt International Airport at 2025-02-25T05:25:00+00:00
+#   Flight Status: scheduled
+#   Aircraft Model: Unknown
+#   Aircraft Registration: Unknown
+
+# Latest flight for N1KE:
+#   Airline: Lufthansa
+#   Departure: Cairo International Airport at 2025-02-25T01:45:00+00:00
+#   Arrival: Frankfurt International Airport at 2025-02-25T05:25:00+00:00
+#   Flight Status: scheduled
+#   Aircraft Model: Unknown
+#   Aircraft Registration: Unknown
