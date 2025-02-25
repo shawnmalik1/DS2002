@@ -1,0 +1,31 @@
+shawnmalik@Shawns-MacBook-Pro-2 DS2002 % python3 financeAPIHW.py
+Enter stock symbols separated by commas: PLTR,AAPL
+
+Stock Data:
+  Stock Ticker                Company Name Current Market Price
+0         PLTR  Palantir Technologies Inc.               $90.68
+1         AAPL                  Apple Inc.              $247.10
+Choose a module from the Quote Summary Endpoint: financialData
+
+Additional Stock Data:
+  Stock Ticker 52 Week High 52 Week Low Return on Assets (ROA)
+0         PLTR      $125.41      $20.33                  3.57%
+1         AAPL       $260.1     $164.08                 22.52%
+
+Fetching trending stocks...
+
+Trending Stocks:
+  Stock Ticker                Company Name Current Market Price 52 Week High 52 Week Low
+0         PLTR  Palantir Technologies Inc.               $90.68      $125.41      $20.33
+1         HIMS    Hims & Hers Health, Inc.               $51.31       $72.98       $11.2
+2          TEM             Tempus AI, Inc.               $69.57       $91.45      $22.89
+3           ZM   Zoom Communications, Inc.                $81.1        $92.8      $55.06
+4         TSLA                 Tesla, Inc.              $330.53      $488.54      $138.8
+
+Latest flight for N628TS:
+  Airline: Singapore Airlines
+  Departure: Auckland International at 2025-02-26T00:55:00+00:00
+  Arrival: Singapore Changi at 2025-02-26T06:30:00+00:00
+  Flight Status: scheduled
+  Aircraft Model: Unknown
+  Aircraft Registration: Unknown
