@@ -94,7 +94,7 @@ selected_module = input("Choose a module from the Quote Summary Endpoint: ")
 stock_details = []
 for symbol in user_symbols:
     symbol = symbol.strip()
-    additional_data = fetch_quote_summary(symbol, ["summaryDetail", "financialData"])
+    additional_data = fetch_quote_summary(symbol, ["summaryDetail", "financialData", selected_module])
     if additional_data:
         stock_details.append(additional_data)
 
