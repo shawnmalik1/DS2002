@@ -13,13 +13,12 @@ def index():
     # Load coffee export data
     df = pd.read_csv("coffee_exports.csv")
 
-    print(df.head())
-    print(df.dtypes)
+    df["Export_Value_USD"] = df["Export_Value_USD"]/100
     # Create chart
     if chart_type == "bar":
         fig = px.bar(df, x="Country", y="Export_Tons", color="Year", title="Coffee Export Value by Country")
     elif chart_type == "scatter":
-        fig = px.scatter(df, x="Year", y="Export_Tons", color="Country", title="Coffee Export Trends")
+        fig = px.scatter(df, x="Country", y="Export_Value_USD", color="Year", title="Coffee Export Trends")
     else:
         fig = px.box(df, x="Country", y="Export_Tons", color="Country", title="Coffee Export Distribution")
     # Dark layout
